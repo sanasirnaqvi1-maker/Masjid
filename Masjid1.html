@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مسجدِ مصطفیٰ ﷺ و مرکزی امام بارگاہ</title>
+<style>
+  * { box-sizing: border-box; }
+  body { 
+    font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaleeq Urdu', serif; 
+    margin: 0; padding: 0 0 100px 0; 
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #ffffff; min-height: 100vh; 
+  }
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .header-section {
+    background: #000428;
+    padding: 20px 10px;
+    text-align: center;
+    direction: rtl;
+    border-bottom: 5px solid #d4af37;
+  }
+
+  .header-banner-container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .header-banner-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  }
+
+  .ticker-container {
+    background-color: #000000;
+    color: #ffaa00;
+    padding: 15px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 2px solid #2a5298;
+    border-bottom: 2px solid #2a5298;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    direction: rtl;
+  }
+
+  .ticker-text {
+    display: inline-block;
+    padding-right: 100%;
+    animation: marquee-rtl 45s linear infinite;
+  }
+
+  .ticker-container:hover .ticker-text {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee-rtl {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+  }
+
+  .content-wrapper { 
+    max-width: 650px; 
+    margin: 30px auto; 
+    padding: 0 15px; 
+  }
+
+  .page-section {
+    display: none; background: #000000; padding: 25px;
+    border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+    text-align: right; border: 2px solid #333333;
+    border-top: 5px solid #2a5298; position: relative; overflow: hidden;
+  }
+
+  .page-section::before {
+    content: ""; position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); width: 60%; height: 60%;
+    background-image: url('https://i.postimg.cc/85mmSq8h/1000731302.jpg'); background-repeat: no-repeat;
+    background-position: center center; background-size: contain;
+    opacity: 0.05; pointer-events: none; z-index: 1;
+  }
+
+  .page-section > * { position: relative; z-index: 2; }
+  .page-section.active { display: block; }
+  .page-section h3 {
+    font-size: 28px; color: #ffaa00; margin-top: 0;
+    border-bottom: 2px dashed #444444; padding-bottom: 15px; margin-bottom: 20px;
+  }
+  .page-section p { font-size: 20px; line-height: 1.9; color: #ffffff; font-weight: normal; margin-bottom: 18px; }
+  .bismillah { text-align: center; font-size: 24px !important; font-weight: bold; color: #ffaa00 !important; margin-bottom: 20px; text-shadow: 0 0 10px rgba(255,170,0,0.5); }
+
+  .form-btn-container { text-align: center; margin-top: 30px; }
+  .form-btn {
+    display: inline-block; padding: 18px 40px; background: linear-gradient(135deg, #00b09b, #96c93d);
+    color: #000000; text-decoration: none; font-size: 22px; font-weight: bold;
+    border-radius: 10px; box-shadow: 0 4px 15px rgba(0,176,155,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .form-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,176,155,0.6);
+  }
+
+  .phone-number {
+    display: inline-block;
+    unicode-bidi: plaintext;
+    text-align: left;
+    direction: ltr;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ffcc;
+  }
+
+  .bottom-nav {
+    position: fixed; bottom: 0; left: 0; width: 100%;
+    background-color: #1e3c72;
+    border-top: 3px solid #ffaa00; display: flex; justify-content: space-around;
+    padding: 10px 4px; box-shadow: 0 -5px 15px rgba(0,0,0,0.5); z-index: 1000;
+  }
+
+  .nav-btn {
+    background: none; border: none; color: #ffffff; font-family: inherit;
+    font-size: 15px; font-weight: bold; cursor: pointer; text-align: center;
+    padding: 6px 6px; border-radius: 8px; transition: background 0.3s, color 0.3s;
+  }
+
+  .nav-btn:hover, .nav-btn.active { background-color: #ffaa00; color: #000000; }
+  .nav-icon { display: block; font-size: 20px; margin-bottom: 3px; }
+
+  /* نیٹلی فائی کا بیج چھپانے کے لیے کوڈ */
+  .netlify-badge { display: none !important; }
+</style>
+</head>
+<body>
+
+<div class="header-section">
+  <div class="header-banner-container">
+    <img src="https://i.postimg.cc/85mmSq8h/1000731302.jpg" alt="مسجدِ مصطفیٰ بینر">
+  </div>
+</div>
+
+<div class="ticker-container">
+  <div class="ticker-text">
+    "جس شخص نے مال کو خرچ نہیں کیا اسے گویا وہ ملا ہی نہیں۔" (حوالہ: اقوالِ علی علیہ السلام، ص ۵۴۳) &nbsp;&bull;&nbsp; "حکمت کو لازم پکڑ کہ یہ نہایت قیمتی اور بیش قیمت ہے۔" (حوالہ: اقوالِ علی علیہ السلام، ص ۴۲۰) &nbsp;&bull;&nbsp; "علم سے عزت حاصل ہوتی ہے۔" (حوالہ: اقوالِ علی علیہ السلام، انسائیکلوپیڈیا، ص ۱۶)&nbsp;&bull;&nbsp; "معتبر روایات کے مطابق باجماعت نماز فرادیٰ نماز سے پچیس گنا افضل ہے۔ (آقائے سیستانی مسئلہ ۱۳۸۰)&nbsp;&bull;&nbsp;بے اعتنائی برتتے ہوئے نماز  جماعت میں شریک نہ ہونا جائز نہیں ہے۔اور انسان کے لئے یہ مناسب نہیں ہے کہ بغیر عذر کے نماز جماعت کو ترک کرے۔(آقائے سیستانی مسئلہ نمبر ۱۳۸۱)
+  </div>
+</div>
+
+<div class="content-wrapper">
+  
+  <div id="tamheed" class="page-section active">
+    <h3>تمہید و تعارف</h3>
+    <p class="bismillah">بسم اللہ الرحمان الرحیم</p>
+    <p>الحمد للہ! آپ کی دعاؤں سے آج ہم اس چیز کے قابل ہو گئے ہیں کہ مسجدِ مصطفیٰ صلی اللہ علیہ وآلہ وسلم و مرکزی امام بارگاہ کے لیے ایک ایپ متعارف کرا رہے ہیں، جس کے ذریعے آپ کی بھیجی ہوئی رقم ہم تک باآسانی پہنچ جائے گی اور آپ کے پاس بھی یہ ریکارڈ محفوظ رہے گا۔ آپ جب چاہیں گے آپ کو آپ کی بھیجی ہوئی رقم کی تفصیل بھی فراہم کی جا سکے گی۔ یہ ہمارا پہلا مقصد ہوگا کہ ہم آپ کو مطمئن کر سکیں اور آپ کی بھیجی ہوئی رقم آپ کے حکم کے مطابق خرچ ہو۔</p>
+    <p>دوسرا مقصد یہ ہے کہ وہ مومنین جو ایسے ممالک میں رہتے ہیں جہاں وہ پیسہ خرچ کرنا چاہتے ہیں مگر کوئی ادارہ یا غریب شخص دستیاب نہ ہونے کی وجہ سے اپنا پیسہ مناسب جگہ پر خرچ نہیں کر پائے؛ لہٰذا ان مومنینِ کرام سے گزارش ہے کہ آپ اپنا پیسہ ہمارے اکاؤنٹ میں جمع کرائیں اور ان شاء اللہ ہم آپ کے حکم کے مطابق اس کو مناسب جگہ پر خرچ کریں گے۔</p>
+    <p>تیسرا مقصد یہ ہے کہ ہم مجتہدینِ کرام یا ان کے وکلاء کی اجازت سے پیسہ جمع اور خرچ کرنے کا کام کریں تاکہ کسی غلطی کی صورت میں تصحیح ہو سکے اور آپ کا پیسہ صحیح طریقے سے خرچ ہو سکے۔</p>
+    <p>چوتھا مقصد ہمارا یہ ہے کہ جب ہماری مسجد و امام بارگاہ سے متعلق خرچہ سے زیادہ آمدنی ہو جائے اور ہم کوئی بڑا قدم اٹھانا چاہیں تو آپ کے تعاون سے وہ کام ہو سکیں۔ جیسے اسکول و کالج کی تعمیر یا کوئی انڈسٹری کی تعمیر تاکہ مومنینِ کرام وہاں سے اپنی آمدنی کا ذریعہ حاصل کر سکیں۔</p>
+    <p>پانچواں مقصد یہ ہے کہ مسجد و امام بارگاہ اس قابل ہو جائے کہ پھر گلشنِ معمار کا کوئی مومن بھوکا نہ سوئے۔</p>
+    <p><strong>یہ سب کیسے ممکن ہے؟</strong></p>
+    <p>جی! یہ سب اللہ کے حکم سے، اہلِ بیت علیہم السلام کی تائید، اور امامِ زمانہ علیہ السلام کی نظرِ کرم، شریعت پر عمل کرنے اور مومنینِ کرام کے اخلاص و محبت اور سچے دل سے انسانیت کی خدمت کے جذبے سے بالکل ممکن ہے۔ صرف ممکن ہی نہیں بلکہ بہت جلد ممکن ہے۔ ان شاء اللہ تعالیٰ</p>
+  </div>
+
+  <div id="form-sec" class="page-section">
+    <h3>رقم کی ادائیگی کا فارم</h3>
+    <p>یہاں ہم ایک فارم شیئر کر رہے ہیں۔ اس کو کس طرح بھرنا ہے؟ اس کی تفصیل درج ذیل ہے۔</p>
+    <p>۱۔ سب سے پہلے فارم میں دیے گئے اکاؤنٹ نمبر پر آپ نے وہ رقم بھیجنی ہے جو آپ کسی مد (مقصد) میں دینا چاہتے ہیں۔ یہ اکاؤنٹ نمبر مسجدِ مصطفیٰ صلی اللہ علیہ وآلہ وسلم و مرکزی امام بارگاہ کا اکاؤنٹ نمبر ہے جو حکومت کے ادارے ایف بی آر میں رجسٹرڈ ہے۔</p>
+    <p>۲۔ جب آپ وہ رقم بھیج دیں تو پھر یہ فارم بھریں یا پُر کریں۔ رقم بھیجے بغیر یہ فارم بھیجنا فضول و بیکار ہوگا۔ فارم بہت آسان بنایا گیا ہے تاکہ آپ کو کسی پریشانی کا سامنا نہ کرنا پڑے۔ فارم بنانے کا مقصد یہ ہے کہ ایک آپ کے پاس ریکارڈ محفوظ رہے۔ دوسرے آپ کی بھیجی ہوئی رقم مناسب مقام پر خرچ ہو سکے جس کا ریکارڈ ہمارے پاس بھی موجود رہے گا۔</p>
+    <p>۳۔ یاد رکھیے فارم بھر کے ہم پیسے کو غلط استعمال سے روک سکتے ہیں، جس کی ذمہ داری ہم سب کا فریضہ ہے۔ یہ اللہ کے گھر کا پیسہ ہے۔</p>
+    <div class="form-btn-container">
+      <a href="https://forms.cloud.microsoft/r/7Kk4iumcru" class="form-btn" target="_blank" rel="noopener noreferrer">آن لائن فارم کھولیں</a>
+    </div>
+  </div>
+
+  <div id="about-sec" class="page-section">
+    <h3>ہمارے بارے میں</h3>
+    <p>مسجدِ مصطفیٰ صلی اللہ علیہ وآلہ وسلم و مرکزی امام بارگاہ کے ٹرسٹ کا قیام ۲۷ اگست ۱۹۹۵ء کو وجود میں آیا۔ جن کے بانیان میں <span translate="no">جناب سید حسن مرتضیٰ رضوی صاحب</span> (صدر)، <span translate="no">جناب سید محمد تقی نقوی صاحب</span> (نائب صدر)، <span translate="no">جناب سید محمد محتشم نقوی صاحب</span> (نائب صدر)، <span translate="no">جناب سید کوثر حسین نقوی صاحب</span> (جنرل سیکریٹری)، <span translate="no">جناب سید محمد نقی نقوی صاحب</span> (ڈپٹی جنرل سیکریٹری)، <span translate="no">جناب سید محمد عباس رضوی صاحب</span> (سوشل سیکریٹری)، <span translate="no">جناب جعفر عباس صفوی صاحب</span> (فنانس سیکریٹری) رہے۔</p>
+    <p>۲۰۰۹ء میں الیکشن ہوئے مگر وہ الیکشن اختلافات کی نظر ہو گئے۔</p>
+    <p>کافی عرصے کے بعد ۸ نومبر ۲۰۲۶ء بروز اتوار کو الیکشن کمیشن ۲۰۲۶ء کی سرپرستی میں الیکشن منعقد کرائے گئے۔ الیکشن کمیشن ۲۰۲۶ء کے اراکین کے اسمائے گرامی یہ ہیں: <span translate="no">جناب سید محمد محتشم نقوی صاحب</span> (ہیڈ)، <span translate="no">جناب سید علی ناصر نقوی صاحب</span>، <span translate="no">جناب سید عرفان حیدر نقوی صاحب</span>، <span translate="no">جناب سید علی عباس رضوی صاحب</span>، <span translate="no">جناب سید وقار محمود نقوی صاحب</span>، اور <span translate="no">جناب سید رضا عارف نقوی صاحب</span>۔</p>
+    <p>الیکشن میں علمدار پینل اور ذولفقار پینل نے حصہ لیا۔ جبکہ ووٹنگ انفرادی بیسیز پر کی گئی۔ ووٹرز کی تعداد ۲۷۰ تھی جن میں سے ۲۰۹ ووٹرز نے حقِ خودارادیت استعمال کیا۔ اس طرح ۷۷ فیصد لوگوں نے الیکشن میں حصہ لیا۔ الیکشن سے پہلے جو حالات چل رہے تھے اس لحاظ سے ۷۷ فیصد بہت بڑی تعداد سمجھی جا رہی ہے۔ الیکشن انتہائی شفاف اور غیر جانبدار رہے۔ سب نے مل کر الیکشن کے نتائج کو تسلیم کیا اور ایک نئی تاریخ رقم کی۔ سب نے مل کر مسجد و امام بارگاہ کی تعمیر و ترقی کے لیے کام کرنے کا عہد کیا۔ جن افراد کے درمیان رنجشیں تھیں سب نے ان کو ختم کر کے وحدت کے ساتھ خدمت کرنے کا عزم کیا۔</p>
+    <p>الیکشن میں ذولفقار پینل کامیاب ہوا۔ آفس بیریئرز میں <span translate="no">جناب سید ابرار حسین رضوی صاحب</span> (صدر)، <span translate="no">جناب حسن علی صاحب</span> (نائب صدر)، <span translate="no">جناب سید علی حسن جعفری صاحب</span> (نائب صدر)، <span translate="no">جناب سید ساجد خرم نقوی صاحب</span> (جنرل سیکریٹری)، <span translate="no">جناب سید احمد مہدی صاحب</span> (ڈپٹی جنرل سیکریٹری)، <span translate="no">جناب سید محمد تقی رضوی صاحب</span> (سوشل سیکریٹری)، <span translate="no">جناب سید محمد واجد زیدی صاحب</span> (فنانس سیکریٹری) شامل ہیں۔</p>
+    <p>جبکہ مینیجنگ کمیٹی میں <span translate="no">جناب سید وصی حسن صاحب</span>، <span translate="no">جناب شہزادہ ابن حسن صاحب</span>، <span translate="no">جناب سید فراز علی صاحب</span>، <span translate="no">جناب سید علی معمبر نقوی صاحب</span>، <span translate="no">جناب سید محمد حسنین رضوی صاحب</span>، <span translate="no">جناب سید مصطفیٰ عباس صاحب</span> اور <span translate="no">جناب سید اسد عباس جعفری صاحب</span> کامیاب قرار پائے۔</p>
+    <p>تقریبِ حلف برداری ۱۵ نومبر ۲۰۲۶ء کو منعقد کی جا رہی ہے۔ اس طرح یہ ٹرسٹ ۲ سال کی مدت ان شاء اللہ پوری کرے گا۔ ۱۵ ستمبر ۲۰۲۸ء کو یہ ٹرسٹ تحلیل کر دیا جائے گا اور الیکشن کمیشن ۲۰۲۸ء اپنی ذمہ داری سنبھال لے گا اور وہ الیکشن کرا کے ۱۵ نومبر ۲۰۲۸ء کو نئی ٹرسٹ کے حوالے ذمہ داریاں سونپ دی جائیں گی۔ ان شاء اللہ تعالیٰ۔</p>
+  </div>
+
+  <div id="announcements" class="page-section">
+    <h3>اعلانات و نوٹس</h3>
+    <div style="text-align: center; padding: 10px 0;">
+      <h2 style="color: #ffaa00; margin-top: 0; font-size: 24px;">
+        📢 اہم اعلانات اور تازہ ترین اپ ڈیٹس
+      </h2>
+      <p>
+        ادارے کی تمام تازہ ترین سرگرمیوں، تقریبات اور اہم اعلانات سے باخبر رہنے کے لیے ہمارے آفیشل فیس بک پیج کو وزٹ کریں۔
+      </p>
+      <div class="form-btn-container">
+        <a href="https://www.facebook.com/share/1E9NY8nvaj/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" 
+           style="display: inline-block; background-color: #1877F2; color: #ffffff; text-decoration: none; padding: 14px 32px; font-size: 20px; font-weight: bold; border-radius: 10px; box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);">
+          🔗 آفیشل فیس بک پیج دیکھیں
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="fiqh-sec" class="page-section">
+    <h3>مسائلِ فقہ</h3>
+    <p>معتبر روایات کے مطابق باجماعت نماز فرادیٰ نماز سے پچیس گنا افضل ہے۔ (آقائے سیستانی مسئلہ ۱۳۸۰)
+۔</p>
+    <p>بے اعتنائی برتتے ہوئے نماز  جماعت میں شریک نہ ہونا جائز نہیں ہے۔اور انسان کے لئے یہ مناسب نہیں ہے کہ بغیر عذر کے نماز جماعت کو ترک کرے۔(آقائے سیستانی مسئلہ نمبر ۱۳۸۱)</p>
+<p>اگر یہ بات (اگرچہ اجمالاً) معلوم ہو کہ در پیش مسائل میں مجتہدین کے فتوے ایک دوسرے سے مختلف ہیں تو ضروری ہے کہ اس مجتہد کی تقلید کی جائے جو ”اعلم “ ہو یعنی اپنے زمانے کے دوسرے مجہندوں کے مقابلے میں احکام الٰہی کو سمجھنے میں سب سے بہتر صلاحیت رکھتا ہو۔ مسئلہ ۲</p>
+  </div>
+
+  <div id="contact-sec" class="page-section">
+    <h3>رابطہ کریں</h3>
+    <p><strong>پتہ:</strong> محبانِ مصطفیٰ ٹرسٹ (رجسٹرڈ)</p>
+    <p>مسجدِ مصطفیٰ صلی اللہ علیہ وآلہ وسلم و مرکزی امام بارگاہ</p>
+    <p>ایس ۴، سیکٹر ایکس ۳، گلشنِ معمار</p>
+    <p>کراچی، پاکستان</p>
+    <p><strong>موبائل نمبر:</strong> <span class="phone-number">+92 333 2157002</span></p>
+  </div>
+
+</div>
+
+<nav class="bottom-nav">
+  <button class="nav-btn active" onclick="openSection('tamheed', this)"><span class="nav-icon">📋</span>تمہید</button>
+  <button class="nav-btn" onclick="openSection('form-sec', this)"><span class="nav-icon">📝</span>فارم</button>
+  <button class="nav-btn" onclick="openSection('about-sec', this)"><span class="nav-icon">ℹ️</span>ہمارے بارے</button>
+  <button class="nav-btn" onclick="openSection('announcements', this)"><span class="nav-icon">📢</span>اعلانات</button>
+  <button class="nav-btn" onclick="openSection('fiqh-sec', this)"><span class="nav-icon">⚖️</span>فقہ</button>
+  <button class="nav-btn" onclick="openSection('contact-sec', this)"><span class="nav-icon">📞</span>رابطہ</button>
+</nav>
+
+<script>
+  function openSection(sectionId, btnElement) {
+    var sections = document.getElementsByClassName("page-section");
+    for (var i = 0; i < sections.length; i++) sections[i].style.display = 'none';
+    var buttons = document.getElementsByClassName("nav-btn");
+    for (var i = 0; i < buttons.length; i++) buttons[i].classList.remove('active');
+    document.getElementById(sectionId).style.display = 'block';
+    btnElement.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
