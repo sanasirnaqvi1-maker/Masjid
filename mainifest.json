@@ -1,13 +1,7 @@
-{
-  "name": "App",
-  "short_name": "App",
-  "start_url": "/",
-  "display": "standalone",
-  "icons": [
-    {
-      "src": "icon.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
-}
+"icons": [
+  {
+    "src": "آicon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+]
