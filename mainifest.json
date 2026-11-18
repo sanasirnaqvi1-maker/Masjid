@@ -1,13 +1,32 @@
 {
-  "name": "My App",
-  "short_name": "App",
-  "start_url": "/",
+  "id": "/Masjid/",
+  "name": "Masjid Mustafa",
+  "short_name": "Masjid",
+  "description": "Masjid Mustafa and Imambargah",
+  "start_url": "/Masjid/",
+  "scope": "/Masjid/",
   "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "/Masjid/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/Masjid/icons/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/Masjid/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
