@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
+<script> if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('/sw.js'); }); } </script>
+<link rel="manifest" href="/manifest.json">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>مسجدِ مصطفیٰ ﷺ و مرکزی امام بارگاہ</title>
@@ -124,24 +126,25 @@
     font-family: monospace;
     font-size: 20px;
     font-weight: bold;
-    color: #00ffcc;
+    color: #ffaa00;
   }
 
   .bottom-nav {
     position: fixed; bottom: 0; left: 0; width: 100%;
     background-color: #1e3c72;
     border-top: 3px solid #ffaa00; display: flex; justify-content: space-around;
-    padding: 10px 4px; box-shadow: 0 -5px 15px rgba(0,0,0,0.5); z-index: 1000;
+    padding: 8px 2px; box-shadow: 0 -5px 15px rgba(0,0,0,0.5); z-index: 1000;
+    flex-wrap: wrap;
   }
 
   .nav-btn {
     background: none; border: none; color: #ffffff; font-family: inherit;
-    font-size: 15px; font-weight: bold; cursor: pointer; text-align: center;
-    padding: 6px 6px; border-radius: 8px; transition: background 0.3s, color 0.3s;
+    font-size: 13px; font-weight: bold; cursor: pointer; text-align: center;
+    padding: 5px 4px; border-radius: 8px; transition: background 0.3s, color 0.3s;
   }
 
   .nav-btn:hover, .nav-btn.active { background-color: #ffaa00; color: #000000; }
-  .nav-icon { display: block; font-size: 20px; margin-bottom: 3px; }
+  .nav-icon { display: block; font-size: 18px; margin-bottom: 2px; }
 
   /* نیٹلی فائی کا بیج چھپانے کے لیے کوڈ */
   .netlify-badge { display: none !important; }
@@ -182,7 +185,7 @@
     <p>۲۔ جب آپ وہ رقم بھیج دیں تو پھر یہ فارم بھریں یا پُر کریں۔ رقم بھیجے بغیر یہ فارم بھیجنا فضول و بیکار ہوگا۔ فارم بہت آسان بنایا گیا ہے تاکہ آپ کو کسی پریشانی کا سامنا نہ کرنا پڑے۔ فارم بنانے کا مقصد یہ ہے کہ ایک آپ کے پاس ریکارڈ محفوظ رہے۔ دوسرے آپ کی بھیجی ہوئی رقم مناسب مقام پر خرچ ہو سکے جس کا ریکارڈ ہمارے پاس بھی موجود رہے گا۔</p>
     <p>۳۔ یاد رکھیے فارم بھر کے ہم پیسے کو غلط استعمال سے روک سکتے ہیں، جس کی ذمہ داری ہم سب کا فریضہ ہے۔ یہ اللہ کے گھر کا پیسہ ہے۔</p>
     <div class="form-btn-container">
-      <a href="https://forms.cloud.microsoft/r/7Kk4iumcru" class="form-btn" target="_blank" rel="noopener noreferrer">آن لائن فارم کھولیں</a>
+      <a href="https://forms.cloud.microsoft/r/M25KpQQmq6" class="form-btn" target="_blank" rel="noopener noreferrer">آن لائن فارم کھولیں</a>
     </div>
   </div>
 
@@ -223,13 +226,21 @@
 <p>اگر یہ بات (اگرچہ اجمالاً) معلوم ہو کہ در پیش مسائل میں مجتہدین کے فتوے ایک دوسرے سے مختلف ہیں تو ضروری ہے کہ اس مجتہد کی تقلید کی جائے جو ”اعلم “ ہو یعنی اپنے زمانے کے دوسرے مجہندوں کے مقابلے میں احکام الٰہی کو سمجھنے میں سب سے بہتر صلاحیت رکھتا ہو۔ مسئلہ ۲</p>
   </div>
 
+  <div id="suggestions-sec" class="page-section">
+    <h3>تجاویز و شکایات</h3>
+    <p>آپ اپنی شکایت یا تجویز یہاں درج کریں۔ ہماری کوشش ہوگی کہ آپ کی رائے اور شکایت پر مناسب توجہ دی جائے۔</p>
+    <div class="form-btn-container">
+      <a href="https://forms.cloud.microsoft/r/rmQB1e5wYd" class="form-btn" target="_blank" rel="noopener noreferrer">تجاویز و شکایات فارم کھولیں</a>
+    </div>
+  </div>
+
   <div id="contact-sec" class="page-section">
     <h3>رابطہ کریں</h3>
     <p><strong>پتہ:</strong> محبانِ مصطفیٰ ٹرسٹ (رجسٹرڈ)</p>
     <p>مسجدِ مصطفیٰ صلی اللہ علیہ وآلہ وسلم و مرکزی امام بارگاہ</p>
     <p>ایس ۴، سیکٹر ایکس ۳، گلشنِ معمار</p>
     <p>کراچی، پاکستان</p>
-    <p><strong>موبائل نمبر:</strong> <span class="phone-number">+92 333 2157002</span></p>
+    <p><strong>موبائل نمبر:</strong> <span class="phone-number">+92 320 1397002</span></p>
   </div>
 
 </div>
@@ -240,6 +251,7 @@
   <button class="nav-btn" onclick="openSection('about-sec', this)"><span class="nav-icon">ℹ️</span>ہمارے بارے</button>
   <button class="nav-btn" onclick="openSection('announcements', this)"><span class="nav-icon">📢</span>اعلانات</button>
   <button class="nav-btn" onclick="openSection('fiqh-sec', this)"><span class="nav-icon">⚖️</span>فقہ</button>
+  <button class="nav-btn" onclick="openSection('suggestions-sec', this)"><span class="nav-icon">💬</span>تجاویز</button>
   <button class="nav-btn" onclick="openSection('contact-sec', this)"><span class="nav-icon">📞</span>رابطہ</button>
 </nav>
 
